@@ -8,7 +8,7 @@
 
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
-var blademin = require('gulp-htmlmin');
+var htmlmin = require('gulp-htmlmin');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ var blademin = require('gulp-htmlmin');
  |
  */
 
-elixir.extend('blademin', function (src, outputDir, options) {
+elixir.extend('blademin', function(src, outputDir, options) {
 
     var options = options || {
             removeAttributeQuotes: true,
@@ -51,9 +51,9 @@ elixir.extend('blademin', function (src, outputDir, options) {
         outputDir: outputDir
     };
 
-    new elixir.Task('minify', function () {
+    new elixir.Task('blademinify', function() {
         return gulp.src(paths.src)
-            .pipe(blademin(options))
+            .pipe(htmlmin(options))
             .pipe(gulp.dest(paths.outputDir))
             .pipe(new elixir.Notification('Blade templates Minified!'));
     })

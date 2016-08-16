@@ -1,6 +1,6 @@
 {
     "name": "laravel-elixir-blade-minifier",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Minify blade templates with Laravel Elixir.",
     "main": "index.js",
     "author": "Ice Cream Waffle <sxlllslgh@gmail.com>",
