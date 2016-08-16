@@ -6,7 +6,7 @@ This is an easy-to-use module to auto minify Laravel blade templates with larave
 ## Usage
 ### Simple
 Code in gulpfile.js:
-```
+```js
 var elixir = require('laravel-elixir');
 
 require('laravel-elixir-blade-minifier');
@@ -18,7 +18,7 @@ elixir(function(mix) {
 And you can use `gulp` or `gulp watch` command to minify your blade templates.
 ### More
 [html-minifier](https://www.npmjs.com/package/html-minifier) options are available, but notice that blade template parser option is needed:
-```
+```js
 ignoreCustomFragments: [/@(if|elseif|for|foreach|forelse|while|continue|break).*[\r\n\s]*/,
                             /@show/,
                             /@stop/,
