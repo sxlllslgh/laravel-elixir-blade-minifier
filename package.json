@@ -1,0 +1,22 @@
+{
+    "name": "laravel-elixir-blade-minifier",
+    "version": "0.0.2",
+    "description": "Minify blade templates with Laravel Elixir.",
+    "main": "index.js",
+    "author": "Ice Cream Waffle <sxlllslgh@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "laravel-elixir": "^6.0.0-10",
+        "html-minifier": "^3.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sxlllslgh/laravel-elixir-blade-minifier"
+    },
+    "keywords": [
+        "laravel",
+        "elixir",
+        "blade",
+        "laravel-elixir-blade-minifier"
+    ]
+}
