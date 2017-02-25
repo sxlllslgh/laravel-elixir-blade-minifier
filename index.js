@@ -22,13 +22,14 @@ var htmlmin = require('gulp-htmlmin');
 elixir.extend('blademin', function(src, outputDir, options) {
 
     var options = options || {
-        removeAttributeQuotes: true,
-        removeComments: true,
         collapseInlineTagWhitespace: true,
         collapseWhitespace: true,
         minifyCSS: true,
         minifyJS: true,
-        processConditionalComments: true
+        processConditionalComments: true,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeTagWhitespace: true
     };
     Object.assign(options, {
         ignoreCustomFragments: [/@(if|elseif|for|foreach|forelse|while|continue|break).*[\r\n\s]*/,
